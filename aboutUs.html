@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutUs.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- -----------------about us content------------ -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We Are The Largest University</h1>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget nibh cursus mauris ullamcorper
+                egestas fermentum. Proin ut ipsum eu risus faucibus condimentum nec eu eros. Nullam non leo vitae
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget nibh cursus mauris ullamcorper
+                egestas fermentum. Proin ut ipsum eu risus faucibus condimentum nec eu eros. Nullam non leo vitae
+                </p>
+                <a class="hero-btn red-btn" href="">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <!----------------------- footer ----------------------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget nibh cursus mauris ullamcorper
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget nibh cursus mauris ullamcorper
+        </p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fas fa-heart"></i> by Abdus Samad</p>
+    </section>
+    <!----------------------- javascript ----------------------->
+    <!-- Toggle menu -->
+    <script>
+        navLinks = document.getElementById("navLinks");
+        function hideMenu() {
+            navLinks.style.right = "-250px";
+        }
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+    </script>
+
+</body>
+
+</html>
